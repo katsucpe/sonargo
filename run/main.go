@@ -2,11 +2,12 @@ package main
 
 import (
 	"fmt"
-	. "github.com/katsucpe/sonargo/sonar"
-	"github.com/davecgh/go-spew/spew"
 	"io"
 	"io/ioutil"
 	"os"
+
+	"github.com/davecgh/go-spew/spew"
+	. "github.com/katsucpe/sonargo/sonar"
 )
 
 var client *Client
@@ -1566,7 +1567,7 @@ func QualitygatesSetAsDefaultFunc() {
 // QualitygatesShowFunc testing Display the details of a quality gate
 func QualitygatesShowFunc() {
 	opt := &QualitygatesShowOption{
-		Id:   "",
+		Id:   0,
 		Name: "",
 	}
 	v, resp, err := client.Qualitygates.Show(opt)

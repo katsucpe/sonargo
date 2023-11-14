@@ -84,6 +84,7 @@ func NewClient(endpoint, username, password string) (*Client, error) {
 	c.UserTokens = &UserTokensService{client: c}
 	c.Users = &UsersService{client: c}
 	c.Webhooks = &WebhooksService{client: c}
+	c.AlmIntegrations = &AlmIntegrationsService{client: c}
 	return c, nil
 }
 
