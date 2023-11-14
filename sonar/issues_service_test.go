@@ -3,7 +3,7 @@ package sonargo_test
 import (
 	"sort"
 
-	. "github.com/cthackers/sonargo/sonar"
+	. "github.com/katsucpe/sonargo/sonar"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )
